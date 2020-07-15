@@ -1,25 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Platform.Model.Runtime.Response;
 
 namespace Platform.Model.View
 {
-    public class LoginFormModel
-    {
-        [Required]
-        public string Email { get; set; }
-        [Required]
-        public string Password { get; set; }
-        public bool PersistLogin { get; set; }
-    }
-
     public class ErrorViewModel
     {
-    }
+        public string UId { get; set; }
+        public string RequestId { get; set; }
 
-    public class ViewModelBase
-    {
-    }
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
-    public class ViewModelOfT
-    {
+        public ErrorResponseModel ErrorResponse { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model ErrorViewModel
+﻿@model Platform.Model.View.ErrorViewModel
 @{
     ViewData["Title"] = "Error";
 }
@@ -8,9 +8,10 @@
 
 @if (Model.ShowRequestId)
 {
-    <p>
-        <strong>Request ID:</strong> <code>@Model.RequestId</code>
-    </p>
+    <p> <strong>Request ID:</strong> <code>@Model.RequestId</code> </p>
+    <p> <strong>Error Response:</strong> <code>@Model.ErrorResponse.UId</code> </p>
+    <p> <strong>Error Response:</strong> <code>@Model.ErrorResponse.StatusCode</code> </p>
+    <p> <strong>Error Response:</strong> <code>@Model.ErrorResponse.Message</code> </p>
 }
 
 <h3>Development Mode</h3>
