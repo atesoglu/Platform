@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Base\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Resource\" />
+    <Folder Include="Runtime\Credential\" />
+    <Folder Include="Runtime\Validators\" />
+  </ItemGroup>
+
+</Project>
