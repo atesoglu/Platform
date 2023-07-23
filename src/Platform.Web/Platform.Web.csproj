@@ -16,7 +16,7 @@
     <PackageReference Include="AspNetCore.HealthChecks.System" Version="3.1.1" />
     <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="3.1.1" />
     
-    <PackageReference Include="RestSharp" Version="106.11.4" />
+    <PackageReference Include="RestSharp" Version="106.12.0" />
     
     <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
     <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
